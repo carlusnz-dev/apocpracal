@@ -1,21 +1,28 @@
-import { Container, Nav, Navbar } from "react-bootstrap"
+import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
 
 function Header() {
      return (
-          <Navbar expand='lg' className='bg-body-tertiary shadow-sm mb-3'>
+          <Navbar bg="light" expand="md">
                <Container>
-                    <Navbar.Brand href="#home">EXPOCAL</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                         <Nav className="me-auto">
-                              <Nav.Item>
-                                   <Nav.Link>Início</Nav.Link>
-                                   <Nav.Link>Sobre</Nav.Link>
-                                   <Nav.Link>Contato</Nav.Link>
-                                   <Nav.Link>Blog</Nav.Link>
-                              </Nav.Item>
-                         </Nav>
-                    </Navbar.Collapse>
+                    <Navbar.Brand href="#">APOC<span className="fw-bold">CAL</span></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="offcanvasNavbar" />
+                    <Navbar.Offcanvas
+                         id="offcanvasNavbar"
+                         aria-labelledby="offcanvasNavbarLabel"
+                         placement="end"
+                    >
+                         <Offcanvas.Header closeButton>
+                              <Offcanvas.Title id="offcanvasNavbarLabel">Menu</Offcanvas.Title>
+                         </Offcanvas.Header>
+                         <Offcanvas.Body>
+                              <Nav className="justify-content-end flex-grow-1 pe-3">
+                                   <Nav.Link href="/">Início</Nav.Link>
+                                   <Nav.Link href="/blog">Blog</Nav.Link>
+                                   <Nav.Link href="/about">Sobre</Nav.Link>
+                                   <Nav.Link href="/contact">Contato</Nav.Link>
+                              </Nav>
+                         </Offcanvas.Body>
+                    </Navbar.Offcanvas>
                </Container>
           </Navbar>
      )
