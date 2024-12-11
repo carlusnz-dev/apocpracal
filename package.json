@@ -1,7 +1,7 @@
 {
   "name": "expocal-site",
   "homepage": "https://carlusnz-dev.github.io/expocal",
-  "private": false,
+  "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
@@ -16,6 +16,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "gh-pages": "^6.2.0",
+    "primereact": "^10.8.5",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.6",
     "react-dom": "^18.3.1",

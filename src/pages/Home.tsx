@@ -1,6 +1,6 @@
 import { Row, Col, Container, Button } from "react-bootstrap"
-import Header from "../components/Navbar"
 import { useMediaQuery } from "react-responsive"
+import EventGallery from "../components/EventGallery"
 
 function Home() {
 
@@ -8,10 +8,9 @@ function Home() {
 
      return (
           <>
-               <Header />
                <Container className='d-flex flex-column justify-content-center align-items-center text-center' fluid style={{
                     height: "100vh",
-                    backgroundColor: "#fff034f",
+                    backgroundColor: "#fff034f"
                }}>
                     <Row>
                          <Col>
@@ -40,7 +39,7 @@ function Home() {
                </Container>
 
                {/* About */}
-               <Container className="bg-body-tertiary" fluid style={{ margin: "12rem auto" }}>
+               <Container className="bg-body-tertiary" fluid style={{ margin: "12rem auto 70px 0" }}>
                     <Container className="py-5">
                          <Row>
                               <Col>
@@ -51,12 +50,68 @@ function Home() {
                                    {isMobile ? (
                                         <img src="https://via.placeholder.com/300" alt="About" className="img-fluid" />
                                    ) : (
-                                        <img src="https://via.placeholder.com/1200x400" alt="About" className="img-fluid rounded-4" />
+                                        <div className="d-flex justify-content-center">
+                                             <img src="https://via.placeholder.com/1200x500" alt="About" className="img-fluid" />
+                                        </div>
                                    )}
                               </Col>
                          </Row>
                     </Container>
+
+                    {/* Eventos */}
+                    <Container className="py-5">
+                         <Row>
+                              <Col>
+                                   <h1 className="text-center fw-bold">Eventos</h1>
+                                   <p className="text-center">Confira nossos eventos</p>
+                                   <hr />
+                                   <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus mi. Sed nec metus in nisi sollicitudin hendrerit. Nullam auctor, justo eget tinc</p>
+                              </Col>
+                         </Row>
+                         <Row>
+                              <EventGallery />
+                         </Row>
+                    </Container>
+
                </Container >
+
+               {/* Fundadores */}
+               <Container className="py-5 mb-5">
+                    <Row>
+                         <Col className="align-self-end mb-5">
+                              <h1 className="text-end fw-bold display-3">Fundadores</h1>
+                              <p className="text-end fs-5">Conheça nossos fundadores</p>
+                         </Col>
+                         <Col>
+                              <img src="https://via.placeholder.com/400" alt="Fundadores" className="img-fluid" />
+                         </Col>
+                    </Row>
+                    <Row className="mt-5">
+                         <Col className="d-flex justify-content-center">
+                              <img src="https://via.placeholder.com/1200x500" alt="Fundadores" className="img-fluid rounded-4" />
+                         </Col>
+                    </Row>
+                    {/* Redes Sociais*/}
+                    <Row className="bg-body-tertiary p-5 shadow rounded-3 w-75 mx-auto" style={{ marginTop: "7rem" }}>
+                         <Col xs={12} className="d-flex justify-content-center">
+                              <h1 className="fw-bold">Redes Sociais</h1>
+                         </Col>
+                         <Col className="d-flex justify-content-center mt-5">
+                              <Button className="rounded-pill shadow me-3">
+                                   <i className="bi bi-facebook me-2"></i>
+                                   Facebook
+                              </Button>
+                              <Button className="rounded-pill shadow me-3">
+                                   <i className="bi bi-instagram me-2"></i>
+                                   Instagram
+                              </Button>
+                              <Button className="rounded-pill shadow">
+                                   <i className="bi bi-twitter me-2"></i>
+                                   Twitter
+                              </Button>
+                         </Col>
+                    </Row>
+               </Container>
           </>
      )
 }

@@ -1,8 +1,9 @@
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 function Header() {
      return (
-          <Navbar bg="light" expand="md">
+          <Navbar bg="light" expand="md" fixed="top">
                <Container>
                     <Navbar.Brand href="#">APOC<span className="fw-bold">CAL</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="offcanvasNavbar" />
@@ -16,10 +17,16 @@ function Header() {
                          </Offcanvas.Header>
                          <Offcanvas.Body>
                               <Nav className="justify-content-end flex-grow-1 pe-3">
-                                   <Nav.Link href="/">Início</Nav.Link>
-                                   <Nav.Link href="/blog">Blog</Nav.Link>
-                                   <Nav.Link href="/about">Sobre</Nav.Link>
-                                   <Nav.Link href="/contact">Contato</Nav.Link>
+                                   <Nav.Link>
+                                        <Link to="/">Início</Link></Nav.Link>
+                                   <Nav.Link>
+                                        <Link to="/blog">Blog</Link></Nav.Link>
+                                   <Nav.Link>
+                                        <Link to="/about">Sobre</Link>
+                                   </Nav.Link>
+                                   <Nav.Link>
+                                        <Link to="/contact">Contato</Link>
+                                   </Nav.Link>
                               </Nav>
                          </Offcanvas.Body>
                     </Navbar.Offcanvas>

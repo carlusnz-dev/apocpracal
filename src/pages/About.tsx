@@ -1,14 +1,13 @@
 import { Row, Col, Container } from "react-bootstrap"
-import Header from "../components/Navbar"
 
 function About() {
      return (
           <>
-               <Header />
-               <Container>
+               <Container style={{ marginTop: "7rem" }}>
                     <Row>
                          <Col>
                               <h1>About</h1>
+                              <p>teste teste</p>
                          </Col>
                     </Row>
                </Container>

@@ -3,12 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './styles/index.css'
 import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { HashRouter } from 'react-router-dom'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
+    <App />
   </StrictMode>,
 )
