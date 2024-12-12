@@ -1,5 +1,6 @@
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap"
 import { Link } from "react-router-dom"
+import '../styles/Navbar.css'
 
 function Header() {
      return (

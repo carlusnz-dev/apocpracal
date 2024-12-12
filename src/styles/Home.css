@@ -1,0 +1,6 @@
+#containerHeader {
+     min-height: 80vh;
+     height: 100vh;
+     background: url('/fotos/foto_23.jpg') no-repeat center center/cover;
+     position: relative;
+}

@@ -1,0 +1,8 @@
+.img-fluid {
+     width: 100%;
+     height: auto;
+     max-height: 500px;
+     margin: 0 auto;
+     display: block;
+     filter: drop-shadow(0 1rem 1.2rem rgba(0, 0, 0, 0.2));
+}

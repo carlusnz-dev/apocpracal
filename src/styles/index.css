@@ -1,0 +1,100 @@
+:root {
+     --color-primary: #0053ac;
+     --color-primary-dark: #003366;
+     --color-secondary: #f1b940;
+     --color-tertiary: #f1f1f1;
+     --color-quaternary: #333;
+     --color-quinary: #fff;
+     --color-error: #ff0000;
+     --color-success: #00ff00;
+     --color-warning: #ffcc00;
+     --color-info: #00ccff;
+     --color-light: #f1f1f1;
+     --color-dark: #333;
+     --color-transparent: transparent;
+     --color-black: #000;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-size: 16px;
+     line-height: 1.5;
+     color: var(--color-quaternary);
+     background-color: var(--color-quinary);
+}
+
+.btn {
+     display: inline-block;
+     padding: 0.5rem 1rem;
+     font-size: 1rem;
+     font-weight: 700;
+     text-align: center;
+     text-transform: uppercase;
+     color: var(--color-quinary);
+     background-color: var(--color-primary);
+     border: 2px solid var(--color-primary);
+     border-radius: 0.25rem;
+     cursor: pointer;
+     transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+     color: var(--color-info);
+     background-color: var(--color-quaternary);
+}
+
+.btn-primary {
+     color: var(--color-quinary);
+     background-color: var(--color-primary);
+     border-color: var(--color-primary);
+}
+
+.btn-secondary {
+     color: var(--color-quaternary);
+     background-color: var(--color-secondary);
+     border-color: var(--color-secondary);
+}
+
+.form-control {
+     display: block;
+     width: 100%;
+     padding: 0.5rem 1rem;
+     font-size: 1rem;
+     font-weight: 400;
+     color: var(--color-quaternary);
+     background-color: var(--color-quinary);
+     border: 2px solid var(--color-tertiary);
+     border-radius: 0.25rem;
+     transition: all 0.3s ease-in;
+}
+
+.form-control:focus {
+     border-color: var(--color-primary);
+     box-shadow: 0 0 0 0.25rem rgba(0, 83, 172, 0.25);
+     border-radius: 5rem;
+}
+
+.back-primary {
+     background-color: var(--color-primary);
+}
+
+.back-secondary {
+     background-color: var(--color-secondary);
+}
+
+.back-tertiary {
+     background-color: var(--color-tertiary);
+}
+
+.bakc-primary-dark {
+     background-color: var(--color-primary-dark);
+}
+
+.text-primary {
+     color: var(--color-primary);
+}
