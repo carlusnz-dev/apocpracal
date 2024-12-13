@@ -10,28 +10,28 @@ const events = [
           title: "Reunião Geral",
           date: "10 de Dezembro, 2024",
           description: "Discussão sobre os novos projetos da associação.",
-          image: "/fotos/WhatsApp Image 2024-12-11 at 14.50.42.jpeg",
+          image: "/fotos/foto_10.jpg",
      },
      {
           id: 2,
           title: "Festa de Natal",
           date: "25 de Dezembro, 2024",
           description: "Venha comemorar o Natal com a gente.",
-          image: "/fotos/WhatsApp Image 2024-12-11 at 14.50.48 (3).jpeg",
+          image: "/fotos/foto_11.jpg",
      },
      {
           id: 3,
           title: "Reunião Geral",
           date: "10 de Dezembro, 2024",
           description: "Discussão sobre os novos projetos da associação.",
-          image: "/fotos/WhatsApp Image 2024-12-11 at 14.50.43.jpeg",
+          image: "/fotos/foto_22.jpg",
      },
      {
           id: 4,
           title: "Festa de Natal",
           date: "25 de Dezembro, 2024",
           description: "Venha comemorar o Natal com a gente.",
-          image: "/fotos/WhatsApp Image 2024-12-11 at 14.50.49.jpeg",
+          image: "/fotos/foto_32.jpg",
      }
 ];
 

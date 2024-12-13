@@ -6,7 +6,7 @@ function Header() {
      return (
           <Navbar bg="light" expand="md" fixed="top">
                <Container>
-                    <Navbar.Brand href="#">APOC<span className="fw-bold">CAL</span></Navbar.Brand>
+                    <Navbar.Brand href="#">APOCPRA<span className="fw-bold">CAL</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="offcanvasNavbar" />
                     <Navbar.Offcanvas
                          id="offcanvasNavbar"
